@@ -419,9 +419,9 @@ classdef bodyClass<handle
         function checkinputs(obj,morisonElement)
             % This method checks WEC-Sim user inputs and generates error messages if parameters are not properly defined for the bodyClass.
             % Check h5 file
-            if exist(obj.h5File,'file')==0 && obj.nhBody==0
-                error('The hdf5 file %s does not exist',obj.h5File)
-            end
+            %if exist(obj.h5File,'file')==0 && obj.nhBody==0
+               % error('The hdf5 file %s does not exist',obj.h5File)
+            %end
             % Check geometry file
             if exist(obj.geometryFile,'file') == 0
                 error('Could not locate and open geometry file %s',obj.geometryFile)
